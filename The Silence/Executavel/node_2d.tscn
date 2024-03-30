@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://dkq2ux7uu82m5"]
+
+[ext_resource type="Texture2D" uid="uid://d3cqxm863e5ew" path="res://jogo/CASA.png" id="1_wj6hk"]
+[ext_resource type="Texture2D" uid="uid://behjvpxvy3pet" path="res://jogo/personagem.webp" id="2_u175o"]
+[ext_resource type="Script" path="res://Executavel/Personagem.gd" id="3_4u3km"]
+[ext_resource type="Texture2D" uid="uid://su3hur5e2xpp" path="res://jogo/Grama.jpg" id="5_yryfx"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Casa" type="Sprite2D" parent="."]
+position = Vector2(822.5, 140.25)
+scale = Vector2(0.826613, 0.753629)
+texture = ExtResource("1_wj6hk")
+
+[node name="Personagem" type="Sprite2D" parent="."]
+position = Vector2(177, 463)
+scale = Vector2(1, 0.865079)
+texture = ExtResource("2_u175o")
+script = ExtResource("3_4u3km")
+
+[node name="Grama" type="Sprite2D" parent="."]
+position = Vector2(574, 647)
+scale = Vector2(1.12109, 0.136719)
+texture = ExtResource("5_yryfx")
